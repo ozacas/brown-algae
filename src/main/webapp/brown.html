@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>AGPs in brown algae</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    
+    <body> 
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://www.plantcellwalls.org.au/">
+                        <img src="images/coe-logo.png" alt="coe-logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="mynavbar-content">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#collapseOne">About</a></li>
+                        <li><a href="#collapseTwo">Pipeline</a></li>
+                        <li><a href="#collapseThree">Limitations</a></li>
+                        <li><a href="#collapseFour">Installation</a></li>
+                        <li><a href="#collapseFive">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- collaborating lab carousels -->
+        
+        <div id="collaboratorCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#collaboratorCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#collaboratorCarousel" data-slide-to="1"></li>
+                <li data-target="#collaboratorCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/collaborators/coe.png" alt="ARC Centre of Excellence in Plant Cell Walls">
+                    <div class="carousel-caption">
+                        <h3>ARC Centre of Excellence in Plant Cell Walls</h3>
+                        <p>University of Melbourne, Australia: Tony Bacic, Monika Doblin, Kim Johnson, Andrew Cassin</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/collaborators/plen.png" alt="Plant &amp; Environmental Sciences">
+                    <div class="carousel-caption">
+                        <h3>Department of Plant and Environmental Sciences</h3>
+                        <p>University of Copenhagen, Denmark: Armando A Salmeán, William GT Willats</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/collaborators/ibomm.png" alt="Integrative Biology of Marine Models">
+                    <div class="carousel-caption" >
+                        <h3>Integrative Biology of Marine Models</h3>
+                        <p>Sorbonne Universités &amp; CNRS, France: Cécile Hervé, Amandine Siméon, Murielle Jam and Bernard Kloareg</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#collaboratorCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#collaboratorCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        
+        <p></p>
+        
+        <!-- collapsible accordion style layout for the main screen -->
+        
+        <div class="panel-group" id="accordion">
+            
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        About
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <p>
+                            This page contains data related to a soon to be published academic manuscript and contains
+                            supporting data, summary results and methods. The manuscript cites the URL for this page so that
+                            readers can access the required data. 
+                        </p>
+
+                        <div class="well">
+                            <p>TODO... Citation goes here...</p>
+                        </div>
+
+                        <p>
+                        The major aim of this study was to identify arabinogalactan proteins (AGPs) and related proteins
+                        in Brown algae. Specifically, Ectocarpus . We briefly explored other brown algae for which sequence
+                        data is available, however, this work is ongoing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+     
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Pipeline
+                    </a>
+                </h4>
+            </div>
+            
+            <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        To meet the aims of the study, we constructed a simplistic pipeline to identify
+                        the major features of these molecules:
+                        <ul>
+                            <li>N-terminal signal peptide, as predicted by <a href="http://www.cbs.dtu.dk/services/SignalP/">SignalP</a></li>
+                            <li>Glycomotifs which are proline-rich (often hydroxyproline) and glycosylated, post-translationally</li>
+                            <li>a GPI anchor, as predicted with <a href="http://mendel.imp.ac.at/gpi/plant_server.html">BigPI</a></li>
+                        </ul>
+                        This was applied to the available proteome sequence data as downloaded from 
+                        <a href="http://bioinformatics.psb.ugent.be/genomes/view/Ectocarpus-siliculosus">the Ectocarpus siliculosus
+ genome project</a>.
+                    </div>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Limitations
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapseThree" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                         <p>
+                            The performance of computational predictors is not well established for algae, we assume that the performance
+                            of SignalP and Big-PI is comparable to performance for higher-plants. The aim of this pipeline was to
+                            generate a modest list of candidates, suitable for experimental validation, rather than obtaining the highest possible precision.
+                            Re-running the pipeline is only possible if you have access to the University of Melbourne network, as access
+                            to the SignalP server is access-restricted.
+                        </p>
+                    </div>
+                </div>
+        </div>
+       
+       <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        Installing the pipeline
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapseFour" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Installation of the pipeline requires you to carry out three steps:
+                        <ul>
+                            <li>Install KNIME via <a href="http://www.knime.org">knime.org (v2.11 or later)</a></li>
+
+                            <li>Install <a href="https://github.com/ozacas/knime-plantcell/">KNIME PlantCell extension</a></li>
+
+                            <li>Download and import the workflow below into your KNIME workspace (file->import). Do not
+                            unpack the zip file, KNIME will do that.</li>
+                        </ul>
+                    </div>
+                </div>
+       </div>
+       
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    Downloads
+                    </a>
+                </h4>
+            </div>
+
+             <div id="collapseFive" class="panel-collapse collapse in">
+                <table class="table">
+                    <thead>
+                        <tr><td>File for download</td><td>Description</td></tr>
+                    </thead>
+                    
+                    <tbody>
+                    <tr>
+                        <td><a href="pipeline_results_20150422.xls">
+                                <span class="glyphicon glyphicon-stats">&nbsp;</span>
+                                Results (24th April 2015)</a></td>
+                        <td>in Excel format (2003 or later)</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="workflow_20150422.zip">
+                                <span class="glyphicon glyphicon-download">&nbsp;</span>
+                                brown_algae_workflow.zip</a></td>
+                                
+                        <td>requires KNIME v2.11 or later, see <a href="#Installation">Installation</a> for details.
+                        Includes all data from start to finish and final results</td>
+                    </tr>
+                    </tbody>
+                </table>
+             </div>
+        </div>
+    </body>
+</html>
